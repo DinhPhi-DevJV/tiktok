@@ -1,0 +1,127 @@
+.wrapper {
+    width: 232px;
+    height: 620px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.wrapper::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.wrapper::-webkit-scrollbar-thumb {
+    height: 50%;
+    border-radius: 2px;
+    background: rgba(22, 24, 35, 0.06);
+}
+
+.wrapper:hover {
+    overflow-y: scroll;
+}
+.navContainer {
+    padding-top: 20px;
+}
+.navList {
+    font-size: 1.8rem;
+    li {
+        display: flex;
+        width: 224px;
+        height: 48px;
+        padding: 8px;
+        list-style: none;
+        font-weight: 700;
+        line-height: 32px;
+
+        div {
+            font-size: 20px;
+        }
+
+        a {
+            display: block;
+            margin-left: 10px;
+            text-decoration: none;
+            color: rgba(22, 24, 35, 1);
+        }
+        .new-color{
+            color: red;
+        }
+    }
+}
+.navParagrap {
+    padding: 20px 8px 24px;
+    font-weight: 400;
+    margin: 0;
+    width: 224px;
+    height: 175px;
+    text-align: start;
+    font-size: 1.6rem;
+    color: rgba(22, 24, 35, 0.5);
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    button {
+        width: 208px;
+        height: 48px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        border: 1px solid var(--primary);
+        background-color: rgba(255, 255, 255, 1);
+        color: var(--primary);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+.navParagrap::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+    height: 25px;
+}
+.navLink {
+    width: 224px;
+    padding: 16px 0 0 8px;
+    font-size: 12px;
+    div {
+        margin-bottom: 8px;
+    }
+
+    a {
+        margin-right: 10px;
+        color: rgba(22, 24, 35, 0.5);
+        font-size: 12px;
+        line-height: 16px;
+        margin-right: 10x;
+        margin-top: 5px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .subNavLink {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seeMore {
+        margin-bottom: 20px;
+        height: 18px;
+        color: rgba(22, 24, 35, 0.34);
+        font-weight: 600px;
+        cursor: pointer;
+        font-size: 12px;
+        span {
+            margin-right: 5px;
+        }
+    }
+    .hidenMore{
+        display: none;
+    }
+    .endNav {
+        color: inherit;
+    }
+    .subNavLinkItem{
+        display: none;
+    }
+    .active{
+        display:visible;
+    }
+}

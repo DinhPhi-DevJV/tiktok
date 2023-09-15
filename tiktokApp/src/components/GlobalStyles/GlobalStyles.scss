@@ -1,0 +1,24 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+:root {
+    --primary: #fe2c55;
+    // default layout
+    --default-layout-header-height:60px;
+    --default-layout-width:1150px;
+    --black: rgba(22, 24, 35, 1);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; //cài font size của thẻ html là 10px
+}
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem; 
+    line-height: 1.5; // chiều dài của dòng sẽ bằng 1,5 lần font size hiện tại
+    text-rendering: optimizeSpeed; // tăng tốc độ khi font đang load vào page
+}
