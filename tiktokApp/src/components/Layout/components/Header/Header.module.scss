@@ -18,6 +18,7 @@
 
  }
 .search{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,19 +47,23 @@
         width: 100%;
         outline: none;
     }
+    input:not(:placeholder-shown) ~ .search-btn{
+        color: rgba(22, 24, 35, 0.75)
+    }
    
-    .clear{
+    .clear,
+    .loading{
+        position:absolute;
+        right: 52px;
         border: none;
         font-size: 1.6rem;
-        margin-left: 45px;
         margin-right: 10px;
         color: rgba(22, 24, 35, 0.34);
 
     }
-    .loading{
-        display: none;
-    }
+   
     .search-btn{
+        
         border: none;
         border-top-right-radius: 92px;
         border-bottom-right-radius: 92px;
