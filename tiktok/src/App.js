@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import ChatApp from './ChatApp';
+import Api from './Api';
 
 
 // const courses=[
@@ -107,7 +107,7 @@ function App(){
     <div style={{padding:20}}>
       <button onClick={()=>setShow(!show)}>Toggle</button>
       <br />
-     {show&&<ChatApp/>}
+     {show&&<Api/>}
      
     </div>
   )
